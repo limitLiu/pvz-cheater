@@ -1,0 +1,11 @@
+[package]
+name = "libprocess-sys"
+links = "process"
+build = "build.rs"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+[build-dependencies]
+cc = { version = "1.0", features = ["parallel"] }
